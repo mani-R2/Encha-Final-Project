@@ -1,0 +1,35 @@
+/* root variables (light mode) */
+:root {
+   --bg-color: #1f2d27;
+   --section-bg: #263a32;
+   --text-color: #f2f5f1;
+   --muted-text: #b9c7bf;
+   --primary-color: #7fb49a;
+   --accent-color: #a7d7c5;
+   --border-color: #3a4f45;
+}
+
+/* dark mode variables */
+body.dark-mode {
+    --bg-color: #1f2d27;
+    --section-bg: #263a32;
+    --text-color: #f2f5f1;
+    --muted-text: #b9c7bf;
+    --primary-color: #7fb49a;
+    --accent-color: #a7d7c5;
+    --border-color: #3a4f45;
+}
+
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: ;
+    color: ;
+    line-height: 1.6;
+}
