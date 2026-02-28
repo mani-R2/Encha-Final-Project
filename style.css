@@ -1,12 +1,12 @@
 /* root variables (light mode) */
 :root {
-   --bg-color: #1f2d27;
-   --section-bg: #263a32;
-   --text-color: #f2f5f1;
-   --muted-text: #b9c7bf;
-   --primary-green: #7fb49a;
-   --accent-green: #a7d7c5;
-   --border-color: #3a4f45;
+   --bg-color: #f8f9f6;
+   --section-bg: #ffffff;
+   --text-color: #1f2d27;
+   --muted-text: #5f6f67;
+   --primary-green: #4a6f5d;
+   --accent-green: #7fb49a;
+  
    --error-color: #b00020;
 }
 
@@ -30,9 +30,13 @@ body.dark-mode {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: var(--bg-color);
+    background-color:var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -138,7 +142,8 @@ nav a {
 }
 .matcha-text h2 {
     font-size: x-large;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
+
 }
 
 .matcha-text h3 {
@@ -146,14 +151,7 @@ nav a {
     margin-bottom: 16px;
 }
 
-
 /* products section */
-.products h2 {
-    font-size: x-large;
-    margin-bottom: 40px;
-    text-align: center;
-}
-
 .product-controls {
     display: flex;
     justify-content: center;
@@ -167,8 +165,9 @@ nav a {
     color: var(--text-color);
     border-radius: 8px;
     font-size: medium;
-    background: none;
 }
+
+
 
 .product-display h3 {
     margin-top: 20px;
