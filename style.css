@@ -126,6 +126,7 @@ nav a {
     gap: 10px;
     padding: 90px 0;
     background-color: var(--border-color);
+    border-top: 3px solid var(--border-color);
 }
 
 .about-text h2 {
