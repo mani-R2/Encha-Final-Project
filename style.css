@@ -86,6 +86,23 @@ nav a {
     text-transform: uppercase;
 }
 
+nav ul {
+    list-style: none;
+    margin: 0;
+   padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
 #themeToggle {
     border: none;
     background: none;
@@ -117,6 +134,12 @@ nav a {
     color: var(--section-bg);
     border-radius: 4px;
     font-size: medium;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* about section */
@@ -168,6 +191,11 @@ nav a {
     font-size: medium;
 }
 
+.product-controls button:hover {
+    background-color: var(--accent-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
 
 .product-display h3 {
@@ -200,6 +228,12 @@ nav a {
     color: var(--section-bg);
     border-radius: 4px;
     font-size: medium;
+}
+
+.gameForm button:hover {
+    background-color: var(--accent-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .gameResults {
@@ -258,6 +292,11 @@ legend {
     cursor: pointer;
 }
 
+.contact button:hover {
+    background-color: var(--accent-green);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 .error {
     color: var(--error-color);
     font-size: medium;
