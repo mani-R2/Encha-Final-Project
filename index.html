@@ -77,24 +77,46 @@
             </div>
         </section>
 
-
-
-
-
-
-
-
-
-
-        <section id="contact" class="contact-section">
+        <section id="contact" class="contact">
             <h2>Contact Us</h2>
             <p>If you have any questions or would like to learn more about our products, please feel free to reach out to us.</p>
-            <form id="contactForm">
-                <input type="text" name="name" placeholder="Your Name" required>
+            <form id="contactForm" novalidate>
+
+                <label for="fullName">Full Name *</label>
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <span class="error" id="fullNameError"></span>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <span class="error" id="phoneError"></span>
+
+                <label for="email">Email</label>
                 <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
+                <span class="error" id="emailError"></span>
+
+                <label for="comments">Comments *</label>
+                <textarea name="comments" placeholder="Type Here" required></textarea>
+                <span class="error" id="commentsError"></span>
+
+                <fieldset>
+                    <legend>Preferred Contact Method *</legend>
+                    <label>
+                        <input type="radio" name="contactMethod" value="phone"> Phone</label>
+                    
+                    <label>
+                        <input type="radio" name="contactMethod" value="email" required> Email</label>
+                    <span class="error" id="contactMethodError"></span>
+                </fieldset>
+
+                <button type="submit">Submit</button>
             </form>
+            <div id="formMessage"></div>
         </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Encha Matcha</p>
+        <a href="#home">Back to Top</a>
+    </footer>
 </body>
 </html>
