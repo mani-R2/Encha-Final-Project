@@ -238,7 +238,7 @@ nav a {
     border: 1px solid var(--border-color);
     width: 100%;
     margin-top: auto;
-    color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .contact textarea {
@@ -247,10 +247,41 @@ nav a {
 }
 
 fieldset {
-    border: none;
+    border: 3px solid var(--border-color);
     margin-top: 20px;
 }
 
 legend {
     margin-bottom: 10px;
+}
+
+.contact button {
+    padding: 12px 30px;
+    background-color: var(--primary-green);
+    color: var(--section-bg);
+    border-radius: 4px;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    color: var(--error-color);
+    font-size: medium;
+}
+
+#formSuccessMessage {
+    margin-top: 20px;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--section-bg);
+    border-top: 1px solid var(--border-color);
+    font-size: medium;
 }
