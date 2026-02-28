@@ -28,3 +28,41 @@ const products = {
         image: 'images/culinary.jpg'
     }
 };
+
+productButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        const selectedProduct = button.getAttribute('data-product');
+
+        productImage.src = products[selectedProduct].image;
+        productImage.alt = products[selectedProduct].name;
+        productName.textContent = products[selectedProduct].name;
+        productDescription.textContent = products[selectedProduct].description;
+    });
+});
+
+//Guessing game
+const gameForm = document.getElementById('gameForm');
+const guessInput = document.getElementById('guessInput');
+const userGuessText = document.getElementById('userGuess');
+const randomNumberText = document.getElementById('randomNumber');
+const gameMessage = document.getElementById('gameMessage');
+
+gameForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const userGuess = Number(guessInput.value);
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+
+    userGuessText.textContent = `Your Guess: ${userGuess}`;
+    randomNumberText.textContent = `Random Number: ${randomNumber}`;
+
+    if (userGuess === randomNumber) {
+        gameMessage.textContent = "Congratulations! Your matcha ritual is complete! 🍵";
+        gameMessage.style.color = "green";
+    } else {
+        gameMessage.textContent = `Sorry, the correct number was ${randomNumber}. Try again!`;
+        gameMessage.style.color = "red";
+    }
+
+    gameForm.reset();
+});
