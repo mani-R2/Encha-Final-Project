@@ -66,3 +66,75 @@ gameForm.addEventListener('submit', function (event) {
 
     gameForm.reset();
 });
+
+//Contact form
+const contactForm = document.getElementById('contactForm');
+
+const fullName = document.getElementById('fullName');
+const phone = document.getElementById('phone');
+const email = document.getElementById('email');
+const comments = document.getElementById('comments');
+const contactMethods = document.getElementById('contactMethod');
+
+const nameError = document.getElementById('nameError');
+const phoneError = document.getElementById('phoneError');
+const emailError = document.getElementById('emailError');
+const commentsError = document.getElementById('commentsError');
+const contactError = document.getElementById('contactError');
+
+const successMessage = document.getElementById('formSuccess');
+
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const phonePattern = /^\d{10}$/;
+
+contactForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    
+    let isValid = true;
+    let preferredContact = "";
+
+    if (fullName.value.trim() === "") {
+        nameError.textContent = "Please enter your full name.";
+        isValid = false;
+    }
+
+    if (comments.value.trim() === "") {
+        commentsError.textContent = "Please include a comment or question.";
+        isValid = false;
+    }
+    
+    for (let i = 0; i < contactMethods.length; i++) {
+        if (contactMethods[i].checked) {
+            preferredContact = contactMethods[i].value;
+        }
+    }
+
+    if (preferredContact === "") {
+        contactError.textContent = "Please select a contact method.";
+        isValid = false;
+    }else if (preferredContact === "phone") {
+        if (!phonePattern.test(phone.value)) {
+            phoneError.textContent = "Please enter a valid 10-digit phone number.";
+            isValid = false;
+        }
+    } else if (preferredContact === "email") {
+        if (!emailPattern.test(email.value)) {
+            emailError.textContent = "Please enter a valid email address.";
+            isValid = false;
+        }
+    }
+
+    if (isValid) {
+        const customer = {
+            name: fullName.value,
+            phone: phone.value,
+            email: email.value,
+            comments: comments.value,
+            preferredContact: preferredContact
+        };
+
+        successMessage.textContent = "Thank you, " + customer.name + "! We will contact you by " + customer.preferredContact + "soon.";
+
+        contactForm.reset();
+    }
+});
