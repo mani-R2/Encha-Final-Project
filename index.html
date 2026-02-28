@@ -61,10 +61,30 @@
             </article>
         </section>
 
-        <section id="game" class="game-section">
-            <h2>The Ritual of Matcha</h2>
-            <p>Experience the ritual of preparing and enjoying matcha. From whisking the powder to savoring the final cup, discover the meditative process that makes matcha a beloved tradition.</p>
+        <section id="game" class="game">
+            <h2>Matcha Ritual Challenge</h2>
+            
+            <form id="gameForm">
+                <label for="guessInput">Guess a number (1-10)</label>
+                <input type="number" id="guessInput" min="1" max="10" required>
+                <button type="submit">Submit</button>
+            </form>
+
+            <div id="gameResult">
+                <p id="userGuess"></p>
+                <p id="randomNumber"></p>
+                <p id="gameMessage"></p>
+            </div>
         </section>
+
+
+
+
+
+
+
+
+
 
         <section id="contact" class="contact-section">
             <h2>Contact Us</h2>
