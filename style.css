@@ -4,9 +4,10 @@
    --section-bg: #263a32;
    --text-color: #f2f5f1;
    --muted-text: #b9c7bf;
-   --primary-color: #7fb49a;
-   --accent-color: #a7d7c5;
+   --primary-green: #7fb49a;
+   --accent-green: #a7d7c5;
    --border-color: #3a4f45;
+   --error-color: #b00020;
 }
 
 /* dark mode variables */
@@ -15,8 +16,8 @@ body.dark-mode {
     --section-bg: #263a32;
     --text-color: #f2f5f1;
     --muted-text: #b9c7bf;
-    --primary-color: #7fb49a;
-    --accent-color: #a7d7c5;
+    --primary-green: #7fb49a;
+    --accent-green: #a7d7c5;
     --border-color: #3a4f45;
 }
 
@@ -86,4 +87,29 @@ nav a {
     font-size: medium;
     cursor: pointer;
     color: var(--text-color);
+}
+
+/* hero section */
+.hero {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.hero h2 {
+    font-size: large;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: medium;
+    margin-bottom: 30px;
+    color: var(--muted-text);
+}
+
+.cta-button {
+    padding: 12px 30px ;
+    background-color: var(--primary-green);
+    color: var(--section-bg);
+    border-radius: 4px;
+    font-size: medium;
 }
