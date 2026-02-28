@@ -75,4 +75,15 @@ header {
     letter-spacing: 2px;
 }
 
+nav a {
+    font-size: medium;
+    text-transform: uppercase;
+}
 
+#themeToggle {
+    border: none;
+    background: none;
+    font-size: medium;
+    cursor: pointer;
+    color: var(--text-color);
+}
