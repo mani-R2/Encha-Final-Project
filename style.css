@@ -186,11 +186,71 @@ nav a {
 .game {
     text-align: center;
     background-color:var(--section-bg);
-    gap: 20px;
 }
 
 .gameForm {
     display: inline-block;
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+.gameForm input {
+    padding: 12px;
+    width: 200px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.gameForm button {
+    padding: 12px 30px;
+    background-color: var(--primary-green);
+    color: var(--section-bg);
+    border-radius: 4px;
+    font-size: medium;
+}
+
+.gameResults {
+    margin-top: 20px;
+}
+
+.gameMessage {
+    font-size: xx-large;
+    color: var(--muted-text);
+}
+
+/* contact section */
+.contact form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact label{
+    display: block;
+    margin-top: 20px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+    margin-top: auto;
+    color: var(--text-color);
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 20px;
+}
+
+legend {
+    margin-bottom: 10px;
 }
