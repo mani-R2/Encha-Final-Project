@@ -1,7 +1,7 @@
 "use strict";
  //light & dark mode toggle
-    const toggleButton = document.getElementById('themeToggle');
-    toggleButton.addEventListener('click', function() {
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
     });
 

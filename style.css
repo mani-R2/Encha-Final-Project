@@ -146,13 +146,6 @@ nav a {
     margin-bottom: 16px;
 }
 
-.matcha-content button {
-    padding: 12px 30px;
-    background-color: var(--primary-green);
-    color: var(--section-bg);
-    border-radius: 4px;
-    font-size: medium;
-}
 
 /* products section */
 .products h2 {
