@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encha Matcha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <h1 class="logo">Encha Matcha</h1>
+            <button id="themeToggle" aria-label="Toggle light and dark mode"></button>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#matcha">Matcha</a></li>
+                    <li><a href="#game">Ritual</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+                <h2>Welcome to Encha Matcha</h2>
+                <p>Organic, Ceremonial-grade Matcha for everyday focus and calm.</p>
+                <a href="#matcha" class="cta-button">Explore Matcha</a>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <figure>
+                    <img src="images/Encha About image.jpeg" alt="bowl of matcha tea">
+                </figure>
+
+                <div class="about-text">
+                    <h2>About Encha</h2>
+                    <p>Encha Matcha is dedicated to providing high-quality matcha sourced from Japan. Our mission is to share the health benefits and cultural significance of matcha with tea lovers around the world.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="matcha" class="matcha">
+            <h2>Our Matcha</h2>
+            <div class="matcha-content">
+                <button data-product="ceremonial">Ceremonial</button>
+                <button data-product="latte">Latte</button>
+                <button data-product="culinary">Culinary</button>
+            </div>
+
+            <article class="product-display">
+                <img id="productImage" src="images/ceremonial.jpg" alt="Ceremonial matcha">
+                <h3 id="productName">Ceremonial Grade Matcha</h3>
+                <p id="productDescription">Smooth, vibrant flavor matcha ideal for daily rituals.</p>
+            </article>
+        </section>
+
+        <section id="game" class="game-section">
+            <h2>The Ritual of Matcha</h2>
+            <p>Experience the ritual of preparing and enjoying matcha. From whisking the powder to savoring the final cup, discover the meditative process that makes matcha a beloved tradition.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more about our products, please feel free to reach out to us.</p>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+</body>
+</html>
