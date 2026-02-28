@@ -19,12 +19,12 @@ const products = {
     },
     latte: {
         name: 'Latte Grade Matcha',
-        description: 'Versatile matcha for cooking and baking, with a rich flavor and vibrant color.',
+        description: 'A blend of organic matcha for a balanced flavor, perfect for lattes and smoothies.',
         image: 'images/latte.jpg'
     },
     culinary: {
         name: 'Culinary Grade Matcha',
-        description: 'A blend of organic matcha for a balanced flavor, perfect for lattes and smoothies.',
+        description: 'Versatile matcha for cooking and baking, with a rich flavor and vibrant color.',
         image: 'images/culinary.jpg'
     }
 };
