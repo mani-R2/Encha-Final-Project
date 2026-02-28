@@ -77,8 +77,8 @@ header {
 }
 
 .logo {
-    font-size: medium;
-    letter-spacing: 2px;
+    height: 40px;
+    width: auto;
 }
 
 nav a {
