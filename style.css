@@ -58,3 +58,21 @@ header, section, footer {
     margin: 0 auto;
 }
 
+/* header & navigation*/
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: medium;
+    letter-spacing: 2px;
+}
+
+
