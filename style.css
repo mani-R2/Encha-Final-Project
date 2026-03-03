@@ -278,7 +278,15 @@ nav ul li a {
     border: 1px solid var(--border-color);
     width: 100%;
     margin-top: auto;
-    color: var(--bg-color);
+}
+
+.contact form input {
+  color: var(--text-color)
+}
+
+.contact form input::placeholder {
+  color: var(--muted-text);
+  opacity: 1;
 }
 
 .contact textarea {
