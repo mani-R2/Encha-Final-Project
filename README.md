@@ -118,7 +118,7 @@ It also helped me understand how UX/UI decisions and front-end development work 
 https://www.behance.net/gallery/245120215/Encha-Matcha-Single-page-Website
 
 **Live Website:**  
-(https://mani-r2.github.io/Encha-Final-Project/)
+https://mani-r2.github.io/Encha-Final-Project/
 
 ## Project Type
 
