@@ -112,24 +112,6 @@ This project strengthened my understanding of:
 
 It also helped me understand how UX/UI decisions and front-end development work together to create a usable digital experience.
 
-## Screenshots
-
-### Wireframe
-
-![Encha Wireframe](images/wireframe.png)
-
-### Light Mode
-
-![Encha Light Mode](images/light-mode.png)
-
-### Dark Mode
-
-![Encha Dark Mode](images/dark-mode.png)
-
-### Interactive Product Display
-
-![Encha Product Display](images/product-display.png)
-
 ## Links
 
 **Behance Case Study:**  
